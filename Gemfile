@@ -11,6 +11,7 @@ gem 'rake', '0.8.7'
 gem 'twitter'
 
 gem 'haml'
+gem 'sass'
 
 gem 'rspec'
 gem 'rspec-rails'

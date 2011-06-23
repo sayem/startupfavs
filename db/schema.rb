@@ -14,17 +14,10 @@ ActiveRecord::Schema.define(:version => 20110622190809) do
 
   create_table "techpeeps", :force => true do |t|
     t.string   "twitter_id", :limit => 50
-    t.text     "sun"
-    t.text     "mon"
-    t.text     "tue"
-    t.text     "wed"
-    t.text     "thu"
-    t.text     "fri"
-    t.text     "sat"
+    t.integer  "count"
+    t.text     "tweets"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "techpeeps", ["twitter_id"], :name => "index_techpeeps_on_twitter_id"
 
 end
