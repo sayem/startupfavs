@@ -1,20 +1,9 @@
+
 require 'rubygems'
 require 'twitter'
 
+puts Twitter.rate_limit_status.remaining_hits.to_s + " Twitter API request(s) remaining this hour"
 
 #puts Twitter.user(16483617).favourites_count
-
 #puts Twitter.user(16483617)
-
-#puts Twitter.user('sayemislam')
-
-
-puts Twitter.favorites('sayemislam')
-
-
-=begin
-Twitter.favorites('sayemislam').each do |x| 
-  puts x.text
-  puts x.user.id
-end
-=end
+#puts Twitter.favorites('sayemislam').first.user.id
