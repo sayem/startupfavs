@@ -12,9 +12,12 @@ gem 'twitter'
 
 gem 'haml'
 gem 'sass'
+gem "compass", ">= 0.11.3"
 
 gem 'rspec'
 gem 'rspec-rails'
+
+gem 'jquery-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'

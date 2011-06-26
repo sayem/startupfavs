@@ -1,0 +1,11 @@
+
+%ul
+  - @favs.each do |f|
+    %li
+      %a{:href => "http://twitter.com/#{f[4]}", :title => f[4], :target => "_new"} 
+        %img{:src => f[5], :alt => f[4]} 
+        = f[4]
+      %a{:href => "http://twitter.com/#{f[0]}", :title => f[0], :target => "_new"} 
+        %img{:src => f[1], :alt => f[0]}
+        = f[0]
+        = f[2]

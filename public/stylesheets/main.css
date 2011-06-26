@@ -1,0 +1,31 @@
+/* line 1, ../../app/stylesheets/main.sass */
+body {
+  font-family: Helvetica Neue, arial, helvetica, sans-serif;
+  font-size: 1em;
+  color: #333333;
+}
+
+/* line 6, ../../app/stylesheets/main.sass */
+.container {
+  position: relative;
+  width: 950px;
+  margin: 0 auto;
+}
+
+/* line 11, ../../app/stylesheets/main.sass */
+ul, ol {
+  list-style: none;
+}
+
+/* line 14, ../../app/stylesheets/main.sass */
+img {
+  height: 48px;
+  width: 48px;
+}
+
+/* line 18, ../../app/stylesheets/main.sass */
+a {
+  color: #333333;
+  text-decoration: none;
+  outline: none;
+}
