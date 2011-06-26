@@ -5,8 +5,9 @@ class Techpeeps < ActiveRecord::Base
   serialize :tweets
   serialize :last_tweet
 
+
   def self.daily
-    Techpeeps.limit(3).each do |techpeep|
+    Techpeeps.limit(50).each do |techpeep|
       user = Twitter.user(techpeep.twitter_id.to_i)
       if user.favourites_count != techpeep.count
         current_fav = techpeep.last_tweet[1]
