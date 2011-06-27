@@ -29,3 +29,75 @@ a {
   text-decoration: none;
   outline: none;
 }
+
+/* line 23, ../../app/stylesheets/main.sass */
+#header {
+  margin-top: 40px;
+  margin-bottom: 45px;
+  margin-left: 45px;
+  font-weight: bold;
+  font-size: 1.45em;
+}
+
+/* line 31, ../../app/stylesheets/main.sass */
+.favs {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* line 35, ../../app/stylesheets/main.sass */
+.techpeep {
+  position: relative;
+  left: 0px;
+  width: 165px;
+  height: 100px;
+  text-align: right;
+  padding-right: 25px;
+  padding-top: 30px;
+}
+
+/* line 44, ../../app/stylesheets/main.sass */
+.favorite {
+  position: absolute;
+  top: 0px;
+  right: 87px;
+  width: 650px;
+  height: 100px;
+  border: solid 1px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+/* line 54, ../../app/stylesheets/main.sass */
+.favorite .username {
+  position: absolute;
+  top: 24px;
+  left: 80px;
+}
+
+/* line 59, ../../app/stylesheets/main.sass */
+.username {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+/* line 65, ../../app/stylesheets/main.sass */
+.tweet {
+  padding-top: 10px;
+  width: 600px;
+}
+
+/* line 69, ../../app/stylesheets/main.sass */
+.link {
+  color: red;
+}
+
+/* line 72, ../../app/stylesheets/main.sass */
+#footer {
+  width: 950px;
+  text-align: center;
+  font-size: 0.75em;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
