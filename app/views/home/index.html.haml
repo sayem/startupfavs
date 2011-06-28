@@ -4,14 +4,14 @@
   - weekend = beg.to_date + 6
   - mon = beg.strftime("%b #{beg.day.ordinalize}")
   - sun = weekend.strftime("%b #{weekend.day.ordinalize}")
-  Favorited startup tweets for #{mon} - #{sun}
+  Favorited startup tweets for <span style="color:#005DBA">#{mon} - #{sun}</span>
 
 %ul
   - @favs.each do |f|
     %li
       .favs
         .techpeep
-          %a{:href => "http://twitter.com/#{f[4]}/favorites", :title => f[4], :target => "_blank"} 
+          %a{:href => "http://twitter.com/#{f[4]}/favorites", :title => f[4] + "'s favorites", :target => "_blank"} 
             %img{:src => f[5], :alt => f[4]} 
             .username
               = f[4]
@@ -24,4 +24,7 @@
               != f[2].gsub(/(https?|ftp|file):\/\/\S+/) {|s| "<a href='#{s}' class='link' target='_blank'>#{s}</a>" }
 
 %div#footer
-  &copy; 2011
+  &copy; 2011 
+  | 
+  %a{:href => "http://github.com/sayem/startupfavs", :target => "_blank"}
+    startupfavs on Github
