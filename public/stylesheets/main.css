@@ -37,17 +37,18 @@ a {
 #header {
   padding-top: 40px;
   margin: 0 0 45px 45px;
+  color: #666666;
   font-weight: bold;
-  font-size: 1.45em;
+  font-size: 1.75em;
 }
 
-/* line 33, ../../app/stylesheets/main.sass */
+/* line 34, ../../app/stylesheets/main.sass */
 .favs {
   position: relative;
   margin-bottom: 30px;
 }
 
-/* line 37, ../../app/stylesheets/main.sass */
+/* line 38, ../../app/stylesheets/main.sass */
 .techpeep {
   position: relative;
   left: 0px;
@@ -57,7 +58,7 @@ a {
   padding: 30px 25px 0 0;
 }
 
-/* line 45, ../../app/stylesheets/main.sass */
+/* line 46, ../../app/stylesheets/main.sass */
 .favorite {
   background-color: #e5eaf1;
   position: absolute;
@@ -68,37 +69,37 @@ a {
   border: solid 1px #b4bbcd;
   padding: 20px 0 10px 20px;
 }
-/* line 54, ../../app/stylesheets/main.sass */
+/* line 55, ../../app/stylesheets/main.sass */
 .favorite .username {
   position: absolute;
   top: 24px;
   left: 80px;
 }
 
-/* line 59, ../../app/stylesheets/main.sass */
+/* line 60, ../../app/stylesheets/main.sass */
 .username {
   margin-top: 5px;
   font-weight: bold;
   font-size: 0.88em;
 }
 
-/* line 65, ../../app/stylesheets/main.sass */
+/* line 66, ../../app/stylesheets/main.sass */
 .tweet {
   padding-top: 10px;
   width: 600px;
 }
 
-/* line 69, ../../app/stylesheets/main.sass */
+/* line 70, ../../app/stylesheets/main.sass */
 .link {
   color: #1d4088;
 }
 
-/* line 72, ../../app/stylesheets/main.sass */
+/* line 73, ../../app/stylesheets/main.sass */
 .link:hover {
   text-decoration: underline;
 }
 
-/* line 75, ../../app/stylesheets/main.sass */
+/* line 76, ../../app/stylesheets/main.sass */
 #footer {
   width: 950px;
   text-align: center;
