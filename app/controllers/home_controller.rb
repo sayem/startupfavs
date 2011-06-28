@@ -9,7 +9,7 @@ class HomeController < ApplicationController
       favs.push(tweets)
     end
     favs.flatten!(1)
-    favs.sort! {|a,b| -1*(a[3] <=> b[3]) }
+    favs.sort! {|a,b| -1*(a[3].to_i <=> b[3].to_i) }
     @favs = favs
   end
 end
