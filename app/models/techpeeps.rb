@@ -20,7 +20,7 @@ class Techpeeps < ActiveRecord::Base
         tweets = favs.collect {|x| x.text }
         index = tweets.index(current_fav).to_i
         favs.slice!(index..-1)
-        favs.collect! {|x| [x.user.screen_name, x.user.profile_image_url, x.text, Time.now.strftime("%m/%d/%Y")] }
+        favs.collect! {|x| [x.user.screen_name, x.user.profile_image_url, x.text, Time.now] }
         techpeep.tweets = techpeep.tweets + favs
         techpeep.count = user.favourites_count
         techpeep.save
@@ -42,7 +42,7 @@ class Techpeeps < ActiveRecord::Base
         tweets = favs.collect {|x| x.text }
         index = tweets.index(current_fav).to_i
         favs.slice!(index..-1)
-        favs.collect! {|x| [x.user.screen_name, x.user.profile_image_url, x.text, Time.now.strftime("%m/%d/%Y")] }
+        favs.collect! {|x| [x.user.screen_name, x.user.profile_image_url, x.text, Time.now] }
         techpeep.tweets = techpeep.tweets + favs
         techpeep.count = user.favourites_count
         techpeep.save
