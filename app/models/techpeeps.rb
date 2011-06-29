@@ -16,12 +16,14 @@ class Techpeeps < ActiveRecord::Base
         latest_fav_id = favs.first.user.id
         latest_fav = favs.first.text
         techpeep.last_tweet = [latest_fav_id, latest_fav]
-
         tweets = favs.collect {|x| x.text }
         index = tweets.index(current_fav).to_i
-        favs.slice!(index..-1)
-        favs.collect! {|x| [x.user.screen_name, x.user.profile_image_url, x.text, Time.now] }
-        techpeep.tweets = techpeep.tweets + favs
+        if index != 0
+          favs.slice!(index..-1)
+          favs.collect! {|x| [x.user.screen_name, x.user.profile_image_url, x.text, Time.now] }
+          techpeep.tweets = techpeep.tweets + favs
+        end
+        
         techpeep.count = user.favourites_count
         techpeep.save
       end
@@ -38,12 +40,14 @@ class Techpeeps < ActiveRecord::Base
         latest_fav_id = favs.first.user.id
         latest_fav = favs.first.text
         techpeep.last_tweet = [latest_fav_id, latest_fav]
-
         tweets = favs.collect {|x| x.text }
         index = tweets.index(current_fav).to_i
-        favs.slice!(index..-1)
-        favs.collect! {|x| [x.user.screen_name, x.user.profile_image_url, x.text, Time.now] }
-        techpeep.tweets = techpeep.tweets + favs
+        if index != 0
+          favs.slice!(index..-1)
+          favs.collect! {|x| [x.user.screen_name, x.user.profile_image_url, x.text, Time.now] }
+          techpeep.tweets = techpeep.tweets + favs
+        end
+        
         techpeep.count = user.favourites_count
         techpeep.save
       end
