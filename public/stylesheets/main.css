@@ -3,9 +3,10 @@ body {
   font-family: Helvetica Neue, arial, helvetica, sans-serif;
   font-size: 1em;
   color: #333333;
+  background-color: #e5eaf1;
 }
 
-/* line 6, ../../app/stylesheets/main.sass */
+/* line 7, ../../app/stylesheets/main.sass */
 .container {
   position: relative;
   width: 950px;
@@ -15,25 +16,25 @@ body {
   border: solid 1px #bdbdbd;
 }
 
-/* line 14, ../../app/stylesheets/main.sass */
+/* line 15, ../../app/stylesheets/main.sass */
 ul, ol {
   list-style: none;
 }
 
-/* line 17, ../../app/stylesheets/main.sass */
+/* line 18, ../../app/stylesheets/main.sass */
 img {
   height: 48px;
   width: 48px;
 }
 
-/* line 21, ../../app/stylesheets/main.sass */
+/* line 22, ../../app/stylesheets/main.sass */
 a {
   color: #333333;
   text-decoration: none;
   outline: none;
 }
 
-/* line 26, ../../app/stylesheets/main.sass */
+/* line 27, ../../app/stylesheets/main.sass */
 #header {
   padding-top: 40px;
   margin: 0 0 45px 45px;
@@ -42,13 +43,13 @@ a {
   font-size: 1.75em;
 }
 
-/* line 34, ../../app/stylesheets/main.sass */
+/* line 35, ../../app/stylesheets/main.sass */
 .favs {
   position: relative;
   margin-bottom: 30px;
 }
 
-/* line 38, ../../app/stylesheets/main.sass */
+/* line 39, ../../app/stylesheets/main.sass */
 .techpeep {
   position: relative;
   left: 0px;
@@ -58,7 +59,7 @@ a {
   padding: 30px 25px 0 0;
 }
 
-/* line 46, ../../app/stylesheets/main.sass */
+/* line 47, ../../app/stylesheets/main.sass */
 .favorite {
   background-color: #e5eaf1;
   position: absolute;
@@ -69,37 +70,37 @@ a {
   border: solid 1px #b4bbcd;
   padding: 20px 0 10px 20px;
 }
-/* line 55, ../../app/stylesheets/main.sass */
+/* line 56, ../../app/stylesheets/main.sass */
 .favorite .username {
   position: absolute;
   top: 24px;
   left: 80px;
 }
 
-/* line 60, ../../app/stylesheets/main.sass */
+/* line 61, ../../app/stylesheets/main.sass */
 .username {
   margin-top: 5px;
   font-weight: bold;
   font-size: 0.88em;
 }
 
-/* line 66, ../../app/stylesheets/main.sass */
+/* line 67, ../../app/stylesheets/main.sass */
 .tweet {
   padding-top: 10px;
   width: 600px;
 }
 
-/* line 70, ../../app/stylesheets/main.sass */
+/* line 71, ../../app/stylesheets/main.sass */
 .link {
   color: #1d4088;
 }
 
-/* line 73, ../../app/stylesheets/main.sass */
+/* line 74, ../../app/stylesheets/main.sass */
 .link:hover {
   text-decoration: underline;
 }
 
-/* line 76, ../../app/stylesheets/main.sass */
+/* line 77, ../../app/stylesheets/main.sass */
 #footer {
   width: 950px;
   text-align: center;
