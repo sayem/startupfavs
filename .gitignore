@@ -6,3 +6,6 @@ tmp/
 *~
 *#
 config/*.yml
+config/initializers/twitter.rb
+current
+releases

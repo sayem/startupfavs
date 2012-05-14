@@ -7,6 +7,6 @@ puts Twitter.rate_limit_status.remaining_hits.to_s + " Twitter API request(s) re
 
 
 #puts Twitter.user(16483617).favourites_count
-#puts Twitter.user(16483617)
+puts Twitter.user(16483617)
 #puts Twitter.favorites('jeffjarvis').first.text
 #puts Twitter.favorites('jeffjarvis').first.user.id
