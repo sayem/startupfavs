@@ -37,7 +37,7 @@ class Techpeeps < ActiveRecord::Base
       favs.push(tweets)
     end
     favs.flatten!(1)
-    favs.sort! {|a,b| -1*(a[3].to_i <=> b[3].to_i) }
+    favs.sort! {|a,b| (b[3].to_i <=> a[3].to_i) }
 
     $redis.set('startupfavs', Marshal.dump(favs))
   end

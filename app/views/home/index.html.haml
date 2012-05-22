@@ -8,20 +8,21 @@
 
 %ul
   - @favs.each do |f|
-    %li
-      .favs
-        .techpeep
-          %a{:href => "http://twitter.com/#{f[4]}/favorites", :title => f[4] + "'s favorites", :target => "_blank"} 
-            %img{:src => f[5], :alt => f[4]} 
-            .username
-              = f[4]
-        .favorite
-          %a{:href => "http://twitter.com/#{f[0]}", :title => f[0], :target => "_blank"} 
-            %img{:src => f[1], :alt => f[0]}
-            .username
-              = f[0]
-            .tweet
-              != f[2].gsub(/(https?|ftp|file):\/\/\S+/) {|s| "<a href='#{s}' class='link' target='_blank'>#{s}</a>" }
+    - if f[4]
+      %li
+        .favs
+          .techpeep
+            %a{:href => "http://twitter.com/#{f[4]}/favorites", :title => f[4] + "'s favorites", :target => "_blank"} 
+              %img{:src => f[5], :alt => f[4]} 
+              .username
+                = f[4]
+          .favorite
+            %a{:href => "http://twitter.com/#{f[0]}", :title => f[0], :target => "_blank"} 
+              %img{:src => f[1], :alt => f[0]}
+              .username
+                = f[0]
+              .tweet
+                != f[2].gsub(/(https?|ftp|file):\/\/\S+/) {|s| "<a href='#{s}' class='link' target='_blank'>#{s}</a>" }
 
 %div#footer
   &copy; 2011
