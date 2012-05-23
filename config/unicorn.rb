@@ -1,4 +1,4 @@
-worker_processes 2
+worker_processes 4
 working_directory "/home/sayem/htdocs/startupfavs/"
 
 # This loads the application in the master process before forking
@@ -7,7 +7,7 @@ working_directory "/home/sayem/htdocs/startupfavs/"
 # http://unicorn.bogomips.org/Unicorn/Configurator.html
 preload_app true
 
-timeout 30
+timeout 60
 
 # This is where we specify the socket.
 # We will point the upstream Nginx module to this socket later on
